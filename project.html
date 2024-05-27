@@ -3,22 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cryptocurrency rates</title>
+    
+    <link rel="stylesheet" href="Project.css">
+
+    
 </head>
 <body>
-    <form action="">
-        <input type="text" placeholder="Enter a crypto">
+    <div class="swap-container" id="container">
+        <div class="input-group">
+            
+            <input id= "crypto" type="text" placeholder="Enter a crypto " >  <img id="crypto-image" onerror="this.style.display='none'">
+            
         
-        <select id="currencyDropdown">
-            <option value="USD">United States Dollar (USD)</option>
-            <option value="EUR">Euro (EUR)</option>
-            <option value="GBP">British Pound Sterling (GBP)</option>
-            <option value="JPY">Japanese Yen (JPY)</option>
-            <option value="CNY">Chinese Yuan (CNY)</option>
-          </select>
+        </div>
 
-          <input type="submit" value="Send">
-    </form>
-    
+        <div class="input-group"> <input type="number" id="amount" value="1"></div>
+        
+        <div class="input-group">
+            <select id="currency">
+                <option value="USD">United States Dollar (USD)</option>
+                <option value="EUR">Euro (EUR)</option>
+                <option value="GBP">British Pound Sterling (GBP)</option>
+                <option value="JPY">Japanese Yen (JPY)</option>
+                <option value="CNY">Chinese Yuan (CNY)</option>
+              </select> <img id="currency-image" onerror="this.style.display='none'">
+
+        </div>
+        
+        <div class="arrow">↓</div>
+        <div class="input-group output">
+        </div>
+        <div class="input-group output">
+        </div>
+        
+        <div class="input-group output">
+        </div>
+        
+        <button id="btn" class="animateBtn">Swap</button>
+
+        <!-- <button id="btn2" class="animateBtn">Get history</button> -->
+
+        <!-- <div id="history"></div> -->
+        <script src="Project.js"></script>
+        
+        <script>
+            (function() {
+              document.title = "Crypto Exchange Rate";
+            })();
+          </script>
+
+        
+    </div>
 </body>
 </html>

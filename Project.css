@@ -1,0 +1,153 @@
+body {
+    background: radial-gradient(circle, #101010, #000000);
+    background-image: url(9.webp);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.swap-container {
+    background: #1c1c1c;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    width: 330px;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+.swap-container .input-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #2c2c2c;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.swap-container .input-group input {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 18px;
+    width: 60%;
+    text-align: left;
+}
+
+.swap-container .input-group select {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.swap-container .arrow {
+    font-size: 24px;
+    margin: 20px 0;
+}
+select:focus option {
+    color: black; 
+}
+
+.swap-container button {
+    background: #007bff;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    padding: 15px 0;
+    font-size: 18px;
+    width: 100%;
+    cursor: pointer;
+    transition: background 0.3s;
+
+}
+
+.swap-container button:hover {
+    background: #0056b3;
+}
+
+input[type="text"] {
+    background-color: transparent; 
+    border: 1px solid #ccc; 
+    padding: 10px; 
+}
+
+.output p {
+    display: block; 
+    margin: 0.5em 0; 
+}
+
+
+@keyframes shake {
+    0% {
+      transform: translateX(0); 
+    }
+    25% {
+      transform: translateX(-5px); 
+    }
+    50% {
+      transform: translateX(5px); 
+    }
+    75% {
+      transform: translateX(-5px); 
+    }
+    100% {
+      transform: translateX(0); /
+    }
+  }
+  
+  
+  .error-message {
+    animation: shake 0.5s ease-in-out;
+  }
+  
+
+
+/* Gemaakt door Chatgpt */ 
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+
+input[type="number"]::-ms-clear {
+  display: none;
+}
+
+input[type="number"]::-ms-reveal {
+  display: none;
+}
+
+
+
+
+
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 30px #2c2c2c inset ;
+    
+    -webkit-text-fill-color:white;
+    color: white;
+    
+}
+
+
+
+
+
+
+
